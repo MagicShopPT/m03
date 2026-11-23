@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX09 — Dynamic Table | Módulo 03</title>
+</head>
+<body>
+    <header>
+        <h1>Tabela Dinâmica com DOM (EX09 — Dynamic Table)</h1>
+        <p>Estudante: Vitor Ângelo Medeiros e Silva (N.º 13422, 51 anos)</p>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2 id="form-title">Adicionar Registo</h2>
+            <form id="record-form">
+                <div>
+                    <label for="name-input">Nome:</label>
+                    <input type="text" id="name-input" placeholder="Ex.: Inês Costa" required>
+                </div>
+
+                <div>
+                    <label for="role-input">Função / UC:</label>
+                    <input type="text" id="role-input" placeholder="Ex.: Programação WEB" required>
+                </div>
+
+                <div>
+                    <label for="score-input">Classificação (0-20):</label>
+                    <input type="number" id="score-input" min="0" max="20" step="0.5" placeholder="Ex.: 16.5" required>
+                </div>
+
+                <button type="submit" id="submit-btn">Adicionar Linha</button>
+                <button type="button" id="cancel-edit-btn" hidden>Cancelar Edição</button>
+            </form>
+            <p id="form-feedback" role="alert"></p>
+        </section>
+
+        <section id="table-section">
+            <h2>Dados na Tabela</h2>
+            <p id="row-counter"></p>
+            <!-- A tabela será construída dinamicamente via JavaScript -->
+            <div id="table-container"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

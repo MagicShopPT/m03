@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX06 — String Laboratory | Módulo 03</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratório de Strings (EX06 — String Laboratory)</h1>
+        <p>Estudante: Vitor Ângelo Medeiros e Silva (N.º 13422, 51 anos)</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Analisar Texto</h2>
+            <form id="string-lab-form">
+                <div>
+                    <label for="text-input">Texto / Frase:</label><br>
+                    <input
+                        type="text"
+                        id="text-input"
+                        value="A mala nada na lama"
+                        size="45"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="search-word-input">Palavra a procurar:</label>
+                    <input
+                        type="text"
+                        id="search-word-input"
+                        value="lama"
+                    >
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" id="normalize-checkbox" checked>
+                        Bónus: Normalizar maiúsculas/minúsculas e acentos
+                    </label>
+                </div>
+
+                <button type="submit">Analisar String</button>
+            </form>
+        </section>
+
+        <section id="results-section">
+            <h2>Resultados da Análise</h2>
+            <div id="results-output"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

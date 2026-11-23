@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX05 — Number Analyzer | Módulo 03</title>
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números (EX05 — Number Analyzer)</h1>
+        <p>Estudante: Vitor Ângelo Medeiros e Silva (N.º 13422, 51 anos)</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduzir Coleção de Números</h2>
+            <form id="analyzer-form">
+                <label for="numbers-list">Números (separados por vírgula):</label>
+                <input
+                    type="text"
+                    id="numbers-list"
+                    value="12, -5, 0, 8, -14, 21, 3, -2"
+                    required
+                >
+                <button type="submit">Analisar</button>
+            </form>
+            <p id="error-message" role="alert"></p>
+        </section>
+
+        <section id="main-stats">
+            <h2>Resultados Principais</h2>
+            <div id="main-stats-output"></div>
+        </section>
+
+        <section id="bonus-stats">
+            <h2>Bónus — Estatísticas Adicionais</h2>
+            <div id="bonus-stats-output"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

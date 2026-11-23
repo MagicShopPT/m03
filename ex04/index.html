@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX04 — Functions | Módulo 03</title>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca de Funções Matemáticas (EX04 — Functions)</h1>
+        <p>Estudante: Vitor Ângelo Medeiros e Silva (N.º 13422, 51 anos)</p>
+    </header>
+
+    <main>
+        <section id="binary-ops">
+            <h2>Operações com Dois Números (add, subtract, multiply, divide)</h2>
+            <form id="binary-form">
+                <label for="num-a">Valor A:</label>
+                <input type="number" id="num-a" step="any" value="12" required>
+
+                <label for="num-b">Valor B:</label>
+                <input type="number" id="num-b" step="any" value="4" required>
+
+                <button type="submit">Calcular Operações</button>
+            </form>
+            <div id="binary-output"></div>
+        </section>
+
+        <section id="collection-ops">
+            <h2>Operações com Coleção de Números (average, max, min)</h2>
+            <form id="collection-form">
+                <label for="numbers-input">Números (separados por vírgula):</label>
+                <input
+                    type="text"
+                    id="numbers-input"
+                    value="10, 25, 4, 18, 32, 7"
+                    required
+                >
+                <button type="submit">Calcular Estatísticas</button>
+            </form>
+            <div id="collection-output"></div>
+        </section>
+
+        <section id="validation-demo">
+            <h2>Bónus — Validação de Argumentos</h2>
+            <div id="validation-output"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

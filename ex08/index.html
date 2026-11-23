@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX08 — Product Objects | Módulo 03</title>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Produtos (EX08 — Product Objects)</h1>
+        <p>Estudante: Vitor Ângelo Medeiros e Silva (N.º 13422, 51 anos)</p>
+    </header>
+
+    <main>
+        <section id="controls-section">
+            <h2>Pesquisa, Filtragem e Ordenação</h2>
+            <form id="product-controls-form">
+                <div>
+                    <label for="search-input">Pesquisar por nome:</label>
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Ex.: rato, monitor, teclado..."
+                    >
+                </div>
+
+                <div>
+                    <label for="category-select">Categoria:</label>
+                    <select id="category-select">
+                        <option value="all">Todas</option>
+                        <option value="Periféricos">Periféricos</option>
+                        <option value="Monitores">Monitores</option>
+                        <option value="Áudio">Áudio</option>
+                        <option value="Armazenamento">Armazenamento</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox" id="only-available-checkbox">
+                        Apenas disponíveis (<code>available === true</code>)
+                    </label>
+                </div>
+
+                <div>
+                    <label for="sort-select">Ordenar por:</label>
+                    <select id="sort-select">
+                        <option value="none">Sem ordenação (ordem original)</option>
+                        <option value="price-asc">Preço: menor para maior</option>
+                        <option value="price-desc">Preço: maior para menor</option>
+                        <option value="name-asc">Nome: A → Z</option>
+                        <option value="name-desc">Nome: Z → A</option>
+                    </select>
+                </div>
+
+                <button type="reset" id="reset-btn">Limpar Filtros</button>
+            </form>
+        </section>
+
+        <section id="products-section">
+            <h2>Produtos Apresentados</h2>
+            <p id="products-summary"></p>
+            <div id="products-output"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
